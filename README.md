@@ -8,3 +8,5 @@ Team Name: Regeanomics
 Team Members: Che-An Lin, Jenna Monchamp, Zach Schwartz, Lordia Larbi-Asare
 
 Team Sponsor: Nicholas Reich
+
+Dataset is provided from Centers for Disease Control and Prevention: https://wonder.cdc.gov/mcd.html
