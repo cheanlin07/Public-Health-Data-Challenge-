@@ -12,16 +12,19 @@ Team Sponsor: Nicholas Reich
 
 Course Name: PUBLTH460 Telling Stories with Data - class was taught by Nicholas Reich
 
-Data analysis and visualization were created using R
+## Tools
+Programming Language: R - Data analysis and visualization 
 
-Powerpoint was created using Google Slide
+Google Slide: Powerpoint presentation
 
 ## Resource
 Dataset is provided from Centers for Disease Control and Prevention: https://wonder.cdc.gov/mcd.html
 
 ## Goal of the Project
 The goal of this project is to analyze the age groups affected by drugs &amp; alcohol overdoses in the top 5 states with their death rates, and determine the relationship between the death rate and causes of death.
-The complete output of the code is published in Rpubs: http://rpubs.com/andy890928/asachallenge460
+
+The complete output of the code is published in RPubs :+1: : http://rpubs.com/andy890928/asachallenge460
+
 
 We used bar charts to show the death rates and causes of death in the top five states
 
