@@ -1,6 +1,7 @@
 # Public-Health-Data-Challenge-Drug & Alcohol Addiction
 A data visualization project that analyzes the age groups affected by drug &amp; alcohol overdoses in the top five states with the highest death rates.
 
+## Background
 The project was an entry to participate in the annual public health data challenge created by the American Statistical Association. 
 
 Team Name: Regeanomics
@@ -15,11 +16,12 @@ Data analysis and visualization were created using R
 
 Powerpoint was created using Google Slide
 
+## Resource
 Dataset is provided from Centers for Disease Control and Prevention: https://wonder.cdc.gov/mcd.html
 
-The complete output of the code is published in Rpubs: http://rpubs.com/andy890928/asachallenge460
-
+## Goal of the Project
 The goal of this project is to analyze the age groups affected by drugs &amp; alcohol overdoses in the top 5 states with their death rates, and determine the relationship between the death rate and causes of death.
+The complete output of the code is published in Rpubs: http://rpubs.com/andy890928/asachallenge460
 
 We used bar charts to show the death rates and causes of death in the top five states
 
