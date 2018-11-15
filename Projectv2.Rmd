@@ -1,0 +1,31 @@
+---
+title: "Public Health 460 Project v2"
+author: "Che-An Lin"
+date: "11/10/2018"
+output: html_document
+---
+
+```{r}
+library(ggplot2)
+Data <- read.delim("MCDthisOne.txt", header = T)
+
+Data_Drug <- Data[Data$MCD...Drug.Alcohol.Induced.Code == "D",]
+Data_Alcohol <- Data[Data$MCD...Drug.Alcohol.Induced.Code == "A",]
+Data_Other <- Data[Data$MCD...Drug.Alcohol.Induced.Code == "O",]
+
+ggplot(data=Data_Alcohol, aes(x=Ten.Year.Age.Groups, y=Deaths, fill = Ten.Year.Age.Groups )) +geom_bar(stat="identity") + ggtitle("Age Group's Death Rate For Alcohol Addiction From 1999 - 2016") + labs(x = "Age Groups", fill= "Age Groups" ) + theme(axis.text.x = element_text(angle = 60, hjust = 1)) + facet_wrap(~Data_Alcohol$State)
+
+
+ggplot(data=Data_Drug, aes(x=Ten.Year.Age.Groups, y=Deaths, fill = Ten.Year.Age.Groups )) +geom_bar(stat="identity") + ggtitle("Age Group's Death Rate For Drug Addiction From 1999 - 2016") + labs(x = "Age Groups", fill= "Age Groups" ) + theme(axis.text.x = element_text(angle = 60, hjust = 1)) + facet_wrap(~Data_Drug$State)
+
+m1 <- lm(Deaths ~ (MCD...Drug.Alcohol.Induced.Code == "A") + Ten.Year.Age.Groups, data = Data_Alcohol)
+summary(m1)
+
+m2 <- lm(Deaths~(MCD...Drug.Alcohol.Induced.Code == "D") + Ten.Year.Age.Groups, data = Data_Drug)
+summary(m2)
+
+
+cor(as.numeric(Data_Alcohol$Ten.Year.Age.Groups), Data_Alcohol$Deaths)
+cor(as.numeric(Data_Drug$Ten.Year.Age.Groups), Data_Drug$Deaths)
+```
+
