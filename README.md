@@ -11,9 +11,9 @@ Team Sponsor: Nicholas Reich
 
 Course Name: PUBLTH460 Telling Stories with Data - class is taught by Nicholas Reich
 
-Data analysis and visualization were created using R. 
+Data analysis and visualization were created using R
 
-Powerpoint was created using Google Slide.
+Powerpoint was created using Google Slide
 
 Dataset is provided from Centers for Disease Control and Prevention: https://wonder.cdc.gov/mcd.html
 
