@@ -4,7 +4,7 @@ A data visualization project that analyzes the age groups affected by drug &amp;
 ## Background
 The project was an entry to participate in the annual public health data challenge created by the American Statistical Association. 
 
-Team Name: Regeanomics
+Team Name: Reaganomics
 
 Team Members: Che-An Lin, Jenna Monchamp, Zach Schwartz, Lordia Larbi-Asare
 
