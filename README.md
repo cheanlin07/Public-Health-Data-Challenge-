@@ -10,3 +10,5 @@ Team Members: Che-An Lin, Jenna Monchamp, Zach Schwartz, Lordia Larbi-Asare
 Team Sponsor: Nicholas Reich
 
 Dataset is provided from Centers for Disease Control and Prevention: https://wonder.cdc.gov/mcd.html
+
+The goal of this project is to analyze the age groups affected by drugs &amp; alcohol overdoses in the top 5 states with their death rates, and determine the relationship between the death rate and causes of death (drug & alcohol addiction).
