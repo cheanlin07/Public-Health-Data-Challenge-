@@ -1,5 +1,5 @@
 # Public-Health-Data-Challenge-Drug & Alcohol Addiction
-A data visualization project that analyzes the age groups affected by drug &amp; alcohol overdoses in the top five states with the highest death rates
+A data visualization project that analyzes the age groups affected by drug &amp; alcohol overdoses in the top five states with the highest death rates.
 
 The project was an entry to participate in the annual public health data challenge created by the American Statistical Association. 
 
@@ -9,7 +9,7 @@ Team Members: Che-An Lin, Jenna Monchamp, Zach Schwartz, Lordia Larbi-Asare
 
 Team Sponsor: Nicholas Reich
 
-Course Name: PUBLTH460 Telling Stories with Data - class is taught by Nicholas Reich
+Course Name: PUBLTH460 Telling Stories with Data - class was taught by Nicholas Reich
 
 Data analysis and visualization were created using R
 
