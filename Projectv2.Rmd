@@ -1,6 +1,6 @@
 ---
 title: "Public Health 460 Project v2"
-author: "Che-An Lin", "Zach Schwartz"
+author: "Che-An Lin. Zach Schwartz, Jenna Monchamp, Lordia Larbi-Asare"
 date: "11/10/2018"
 output: html_document
 ---
