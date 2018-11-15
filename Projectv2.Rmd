@@ -7,24 +7,28 @@ output: html_document
 
 ```{r}
 library(ggplot2)
+#Import the dataset to RStudio
 Data <- read.delim("MCDthisOne.txt", header = T)
 
+#Filter the dataset to have only alcohol and drug addictions as the causes of death.
 Data_Drug <- Data[Data$MCD...Drug.Alcohol.Induced.Code == "D",]
 Data_Alcohol <- Data[Data$MCD...Drug.Alcohol.Induced.Code == "A",]
 Data_Other <- Data[Data$MCD...Drug.Alcohol.Induced.Code == "O",]
 
+#Produce the bar charts
 ggplot(data=Data_Alcohol, aes(x=Ten.Year.Age.Groups, y=Deaths, fill = Ten.Year.Age.Groups )) +geom_bar(stat="identity") + ggtitle("Age Group's Death Rate For Alcohol Addiction From 1999 - 2016") + labs(x = "Age Groups", fill= "Age Groups" ) + theme(axis.text.x = element_text(angle = 60, hjust = 1)) + facet_wrap(~Data_Alcohol$State)
 
 
 ggplot(data=Data_Drug, aes(x=Ten.Year.Age.Groups, y=Deaths, fill = Ten.Year.Age.Groups )) +geom_bar(stat="identity") + ggtitle("Age Group's Death Rate For Drug Addiction From 1999 - 2016") + labs(x = "Age Groups", fill= "Age Groups" ) + theme(axis.text.x = element_text(angle = 60, hjust = 1)) + facet_wrap(~Data_Drug$State)
 
+#Produce the R-squared values for regression analysis
 m1 <- lm(Deaths ~ (MCD...Drug.Alcohol.Induced.Code == "A") + Ten.Year.Age.Groups, data = Data_Alcohol)
 summary(m1)
 
 m2 <- lm(Deaths~(MCD...Drug.Alcohol.Induced.Code == "D") + Ten.Year.Age.Groups, data = Data_Drug)
 summary(m2)
 
-
+#Produce the correlation values for regression analysis
 cor(as.numeric(Data_Alcohol$Ten.Year.Age.Groups), Data_Alcohol$Deaths)
 cor(as.numeric(Data_Drug$Ten.Year.Age.Groups), Data_Drug$Deaths)
 ```
