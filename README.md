@@ -1,4 +1,4 @@
-# Public-Health-Data-Challenge-
+# Public-Health-Data-Challenge-Drug & Alcohol Addiction
 A data visualization project that analyzes the age groups affected by drugs &amp; alcohol overdoses in the top 5 states with their death rates.
 
 The project was an entry to participate the annual public health data challenge created by the American Statistical Association. 
