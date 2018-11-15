@@ -19,5 +19,5 @@ The goal of this project is to analyze the age groups affected by drugs &amp; al
 
 We used bar charts to show the death rates and causes of death in the top five states 
 ![alt text](https://i.imgur.com/XSPtJWQ.jpg)
-
+![alt text](https://i.imgur.com/diObLCu.jpg)
 
