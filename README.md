@@ -10,6 +10,8 @@ Team Members: Che-An Lin, Jenna Monchamp, Zach Schwartz, Lordia Larbi-Asare
 
 Team Sponsor: Nicholas Reich
 
+School: University of Massachusetts - Amherst
+
 Course Name: PUBLTH460 Telling Stories with Data - class was taught by Nicholas Reich
 
 ## Tools
