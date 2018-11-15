@@ -21,3 +21,24 @@ We used bar charts to show the death rates and causes of death in the top five s
 ![alt text](https://i.imgur.com/XSPtJWQ.jpg)
 ![alt text](https://i.imgur.com/diObLCu.jpg)
 
+We used linear regression to determine the relationship between the death rate and causes of death
+```{r}
+library(ggplot2)
+#Import the dataset to RStudio
+Data <- read.delim("MCDthisOne.txt", header = T)
+
+Data_Drug <- Data[Data$MCD...Drug.Alcohol.Induced.Code == "D",]
+Data_Alcohol <- Data[Data$MCD...Drug.Alcohol.Induced.Code == "A",]
+Data_Other <- Data[Data$MCD...Drug.Alcohol.Induced.Code == "O",]
+
+#Determine the R-squared value for regression analysis
+m1 <- lm(Deaths ~ (MCD...Drug.Alcohol.Induced.Code == "A") + Ten.Year.Age.Groups, data = Data_Alcohol)
+summary(m1)
+
+m2 <- lm(Deaths~(MCD...Drug.Alcohol.Induced.Code == "D") + Ten.Year.Age.Groups, data = Data_Drug)
+summary(m2)
+
+#Determine the correlation value for regression analysis
+cor(as.numeric(Data_Alcohol$Ten.Year.Age.Groups), Data_Alcohol$Deaths)
+cor(as.numeric(Data_Drug$Ten.Year.Age.Groups), Data_Drug$Deaths)
+```
